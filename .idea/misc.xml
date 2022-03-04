@@ -3,17 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Flutter Projs/FrontendAssignment/app/src/main/res/drawable/dots_1.xml" value="0.26205128205128203" />
         <entry key="..\:/Flutter Projs/FrontendAssignment/app/src/main/res/drawable/ic_add.xml" value="0.26205128205128203" />
         <entry key="..\:/Flutter Projs/FrontendAssignment/app/src/main/res/drawable/ic_answer.xml" value="0.26205128205128203" />
         <entry key="..\:/Flutter Projs/FrontendAssignment/app/src/main/res/drawable/ic_baseline_add_box_24.xml" value="0.26205128205128203" />
+        <entry key="..\:/Flutter Projs/FrontendAssignment/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.26205128205128203" />
         <entry key="..\:/Flutter Projs/FrontendAssignment/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.26205128205128203" />
         <entry key="..\:/Flutter Projs/FrontendAssignment/app/src/main/res/drawable/ic_baseline_thumb_up_24.xml" value="0.26205128205128203" />
+        <entry key="..\:/Flutter Projs/FrontendAssignment/app/src/main/res/drawable/ic_dots.xml" value="0.26205128205128203" />
         <entry key="..\:/Flutter Projs/FrontendAssignment/app/src/main/res/drawable/ic_location.xml" value="0.26205128205128203" />
         <entry key="..\:/Flutter Projs/FrontendAssignment/app/src/main/res/drawable/ic_save.xml" value="0.26205128205128203" />
         <entry key="..\:/Flutter Projs/FrontendAssignment/app/src/main/res/drawable/ic_search.xml" value="0.15462962962962962" />
         <entry key="..\:/Flutter Projs/FrontendAssignment/app/src/main/res/drawable/shape_circle.xml" value="0.26614583333333336" />
         <entry key="..\:/Flutter Projs/FrontendAssignment/app/src/main/res/drawable/shape_rectangle.xml" value="0.26205128205128203" />
-        <entry key="..\:/Flutter Projs/FrontendAssignment/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Flutter Projs/FrontendAssignment/app/src/main/res/layout/activity_main.xml" value="0.3575418994413408" />
       </map>
     </option>
   </component>
