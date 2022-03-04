@@ -98,6 +98,13 @@
         android:layout_gravity="right"
         android:layout_marginRight="16dp"
         />
+
+    <LinearLayout
+      android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -162,6 +169,14 @@
 
     </LinearLayout>
 
+    <TextView
+      android:id="@+id/tvQuery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:textColor="@color/blue"
+      android:text="Hey I have a question about travelling to Mumbai with 4 people. Are there any good places to stay?"
+
+    </LinearLayout>
 
   </androidx.cardview.widget.CardView>
 
