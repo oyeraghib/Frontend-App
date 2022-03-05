@@ -133,8 +133,6 @@ class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>
         //User giving Answers
         var ivAnsProfile: ImageView
         var tvAnsName: TextView
-
-        var tvAnswTime: TextView
         var tvAnswer: TextView
 
         var numOfAnswers: TextView
@@ -148,8 +146,7 @@ class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>
 
             ivAnsProfile = itemView.findViewById(R.id.ivAnsProfile)
             tvAnsName = itemView.findViewById(R.id.tvAnsName)
-            tvAnswer = itemView.findViewById(R.id.tvAnsName)
-            tvAnswTime = itemview.findViewById(R.id.tvAnsTime)
+            tvAnswer = itemView.findViewById(R.id.tvAnswer)
             numOfAnswers = itemView.findViewById(R.id.tvNoOfAnswers)
         }
 
@@ -173,7 +170,8 @@ class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>
         holder.ivAnsProfile.setImageResource(itemAnsProfile[position])
         holder.tvAnsName.text = AnsName[position]
         holder.tvAnswer.text = Answers[position]
-        holder.tvAnswTime.text = AnsTime[position]
+
+        holder.numOfAnswers.text = numOfAnswers[position]
 
 
         holder.itemView.setOnClickListener { v->
