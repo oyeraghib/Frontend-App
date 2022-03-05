@@ -10,6 +10,10 @@ import androidx.recyclerview.widget.RecyclerView
 
 class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
 
+
+    /*
+    Demo Code
+     */
     private val itemQuesProfile = intArrayOf(
         R.drawable.user1,
         R.drawable.user2,
@@ -94,7 +98,7 @@ class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>
     )
 
     private val Answers = arrayOf(
-        "Elon Musk"
+        "Elon Musk",
         "Tunde Kebab",
         "Mumbai",
         "It is Red Fort and you can also visit Jama Masjid",
@@ -150,6 +154,8 @@ class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>
         }
 
     }
+
+    //Methods
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val v = LayoutInflater.from(parent.context)
