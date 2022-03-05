@@ -32,7 +32,7 @@
           android:layout_height="match_parent"
           android:layout_width="match_parent"
           android:id="@+id/imgProfile"
-          android:src="@drawable/profile_image"
+          android:src="@drawable/user_profile"
           android:scaleType="centerCrop"
           />
     </androidx.cardview.widget.CardView>
@@ -132,7 +132,7 @@
                 android:id="@+id/ivQueProfile"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/profile_image"
+                android:src="@drawable/user8"
                 android:scaleType="centerCrop"
                 />
 
@@ -148,8 +148,7 @@
                 android:id="@+id/tvQName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Rakesh Gupta"
-
+                android:text="Martin Scholz"
                 android:textColor="@color/light_gray"
                 android:fontFamily="sans-serif"
                 />
@@ -232,7 +231,7 @@
                 android:id="@+id/ivAnsProfile"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/profile_image"
+                android:src="@drawable/user16"
                 android:scaleType="centerCrop"
                 />
 
