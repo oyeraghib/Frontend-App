@@ -6,8 +6,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.DisplayMetrics
-import android.view.LayoutInflater
-import android.view.View
+import android.view.*
 import android.widget.PopupWindow
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -16,38 +15,31 @@ import com.example.frontendassignment.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private var layoutManager: RecyclerView.LayoutManager? = null
-    private lateinit var adapter: RecyclerViewAdapter
     private lateinit var binding: ActivityMainBinding
-
-
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-
         setContentView(binding.root)
 
 
-        layoutManager = LinearLayoutManager(this)
-        binding.recyclerView.layoutManager = layoutManager
-
-        adapter = RecyclerViewAdapter()
-        binding.recyclerView.adapter = adapter
-
-        binding.imageButtonLocation.setOnClickListener{ v->
-            Toast.makeText(this, "Location is clicked", Toast.LENGTH_SHORT).show()
-
-
-//            val dialogBuilder = AlertDialog.Builder(this)
-//            val dialogView = layoutInflater.inflate(R.layout.location_layout, null)
-//
-//            dialogBuilder.setView(dialogView)
-//            val alertDialog = dialogBuilder.create()
-//            alertDialog.show()
-
+        binding.ivLocation.setOnClickListener {
+            val dialog = Dialog(this)
+            val window: Window = dialog.window!!
+            val wmLp = window.attributes
+            wmLp.gravity = Gravity.TOP
+            wmLp.width = WindowManager.LayoutParams.MATCH_PARENT
+            wmLp.height = WindowManager.LayoutParams.WRAP_CONTENT
+            window.attributes = wmLp
+            dialog.setContentView(R.layout.layout_popup)
+            dialog.setCancelable(true)
+            dialog.setCanceledOnTouchOutside(true)
+            dialog.show()
         }
 
+        card_view.setOnClickListener {
+            val i = Intent(this, DetailsActivity::class.java)
+            startActivity(i)
+        }
     }
 }
