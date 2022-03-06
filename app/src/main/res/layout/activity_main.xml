@@ -87,15 +87,21 @@
         android:orientation="vertical"
         >
 
-      <include layout="@layout/layout_feed" />
+      <include layout="@layout/layout_feed_details" />
 
-      <include layout="@layout/layout_feed_image" />
+      <include layout="@layout/layout_image_feed" />
 
-      <include layout="@layout/layout_feed" />
+      <include layout="@layout/layout_feed_details" />
 
-      <include layout="@layout/layout_feed_image" />
+      <include layout="@layout/layout_image_feed" />
 
-      <include layout="@layout/layout_feed" />
+      <include layout="@layout/layout_feed_details" />
+
+      <include layout="@layout/layout_image_feed" />
+
+      <include layout="@layout/layout_feed_details" />
+
+
     </LinearLayout>
   </ScrollView>
 </RelativeLayout>

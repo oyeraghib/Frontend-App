@@ -2,10 +2,9 @@ package com.example.frontendassignment.drag;
 
 public interface DragListener {
 
-  void onStartDraggingView();
+    void onStartDraggingView();
 
-  void onDragging(float var1);
+    void onDragging(float var1);
 
-  void onViewCosed();
+    void onViewCosed();
 }
-
