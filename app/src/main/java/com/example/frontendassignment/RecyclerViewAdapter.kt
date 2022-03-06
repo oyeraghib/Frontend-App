@@ -178,6 +178,10 @@ class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>
             Toast.makeText(v.context, "Clicked the item", Toast.LENGTH_SHORT).show()
         }
 
+        holder.tvQuestion.setOnClickListener{
+
+        }
+
     }
 
     override fun getItemCount(): Int {
