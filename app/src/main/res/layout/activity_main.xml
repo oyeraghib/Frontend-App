@@ -1,36 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context=".MainActivity"
-    >
-
+    tools:context=".MainActivity">
 
   <androidx.appcompat.widget.Toolbar
       android:id="@+id/toolbar"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:elevation="4dp"
-      android:padding="10dp"
-      >
+      android:padding="10dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
+        android:layout_height="wrap_content">
 
-      <ImageView
-          android:id="@+id/ivProfile"
+      <de.hdodenhof.circleimageview.CircleImageView
+          xmlns:app="http://schemas.android.com/apk/res-auto"
+          android:id="@+id/ivProfilePicture"
           android:layout_width="50dp"
           android:layout_height="50dp"
-          android:layout_centerVertical="true"
-          android:scaleType="centerCrop"
-          android:src="@drawable/user11"
-          />
+          android:src="@drawable/user_profile"
+          app:civ_border_width="2dp"
+          app:civ_border_color="#FF000000"/>
 
       <ImageView
           android:id="@+id/ivLocation"
@@ -38,14 +33,15 @@
           android:layout_height="35dp"
           android:layout_centerVertical="true"
           android:layout_marginStart="20dp"
-          android:layout_toEndOf="@id/ivProfile"
+          android:layout_toEndOf="@id/ivProfilePicture"
           android:background="@drawable/shape_circle"
           android:padding="5dp"
           android:src="@drawable/ic_location"
-          android:tint="@android:color/white"
+          app:tint="@android:color/white"
           />
 
       <ImageView
+          android:id="@+id/ivSearch"
           android:layout_width="35dp"
           android:layout_height="35dp"
           android:layout_centerVertical="true"
@@ -58,6 +54,7 @@
           />
 
       <TextView
+          android:id="@+id/tvPostButton"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_alignParentEnd="true"
@@ -68,9 +65,8 @@
           android:gravity="center"
           android:padding="15dp"
           android:text="POST"
-          android:textColor="#ffffff"
-          android:textSize="18sp"
-          />
+          android:textColor="@color/white"
+          android:textSize="18sp" />
     </RelativeLayout>
   </androidx.appcompat.widget.Toolbar>
 
@@ -87,22 +83,15 @@
         android:orientation="vertical"
         >
 
-      <include layout="@layout/layout_feed_details" />
+      <include layout="@layout/layout_text_feed" />
 
       <include layout="@layout/layout_image_feed" />
 
-      <include layout="@layout/layout_feed_details" />
+      <include layout="@layout/layout_text_feed" />
 
       <include layout="@layout/layout_image_feed" />
 
-      <include layout="@layout/layout_feed_details" />
-
-      <include layout="@layout/layout_image_feed" />
-
-      <include layout="@layout/layout_feed_details" />
-
-
+      <include layout="@layout/layout_text_feed" />
     </LinearLayout>
   </ScrollView>
 </RelativeLayout>
-

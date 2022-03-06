@@ -13,16 +13,16 @@ class DetailsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_details)
 
-        type_ans.setOnClickListener {
-            type_ans.visibility = View.GONE
+        tvAnswer.setOnClickListener {
+            tvAnswer.visibility = View.GONE
 
             type_user.visibility = View.VISIBLE
-            type_et.visibility = View.VISIBLE
-            type_mic.visibility = View.VISIBLE
-            type_send.visibility = View.GONE
+            editText.visibility = View.VISIBLE
+            ivMic.visibility = View.VISIBLE
+            ivSend.visibility = View.GONE
         }
 
-        type_et.addTextChangedListener(object : TextWatcher {
+        editText.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable?) {
             }
 
@@ -33,17 +33,17 @@ class DetailsActivity : AppCompatActivity() {
                 if (s?.trim()?.length == 0 && type_user.visibility == View.GONE) {
                     type_user.animation = AnimationUtils.loadAnimation(applicationContext, R.anim.push_up_in)
                     type_user.visibility = View.VISIBLE
-                    type_et.animation = AnimationUtils.loadAnimation(applicationContext, R.anim.slide_in_left)
-                    type_mic.animation = AnimationUtils.loadAnimation(applicationContext, R.anim.slide_in_left)
-                    type_send.animation = AnimationUtils.loadAnimation(applicationContext, R.anim.push_up_out)
-                    type_send.visibility = View.GONE
+                    editText.animation = AnimationUtils.loadAnimation(applicationContext, R.anim.slide_in_left)
+                    ivMic.animation = AnimationUtils.loadAnimation(applicationContext, R.anim.slide_in_left)
+                    ivSend.animation = AnimationUtils.loadAnimation(applicationContext, R.anim.push_up_out)
+                    ivSend.visibility = View.GONE
                 } else if (type_user.visibility == View.VISIBLE) {
                     type_user.animation = AnimationUtils.loadAnimation(applicationContext, R.anim.push_up_out)
                     type_user.visibility = View.GONE
-                    type_et.animation = AnimationUtils.loadAnimation(applicationContext, R.anim.slide_in_right)
-                    type_mic.animation = AnimationUtils.loadAnimation(applicationContext, R.anim.slide_in_right)
-                    type_send.animation = AnimationUtils.loadAnimation(applicationContext, R.anim.push_up_in)
-                    type_send.visibility = View.VISIBLE
+                    editText.animation = AnimationUtils.loadAnimation(applicationContext, R.anim.slide_in_right)
+                    ivMic.animation = AnimationUtils.loadAnimation(applicationContext, R.anim.slide_in_right)
+                    ivSend.animation = AnimationUtils.loadAnimation(applicationContext, R.anim.push_up_in)
+                    ivSend.visibility = View.VISIBLE
                 }
             }
         })

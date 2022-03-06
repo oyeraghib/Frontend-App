@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             dialog.show()
         }
 
-        cardViewFeed.setOnClickListener {
+        cardViewFeedDetails.setOnClickListener {
             val i = Intent(this, DetailsActivity::class.java)
             startActivity(i)
         }
